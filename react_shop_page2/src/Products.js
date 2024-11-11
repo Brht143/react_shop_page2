@@ -27,7 +27,16 @@ function Products() {
 
     return ( 
         <div className = "cookiesList">
-            {cookiesListConverted}
+            <div key = {cookiesList[0].id} className = "cookie">
+        <img src={cookiesList[0].image}></img>
+        <h3>{cookiesList[0].name}</h3>
+        <p>{cookiesList[0].price} K.D.</p>
+    </div>
+    <div key = {cookiesList[1].id} className = "cookie">
+        <img src={cookiesList[1].image}></img>
+        <h3>{cookiesList[1].name}</h3>
+        <p>{cookiesList[1].price} K.D.</p>
+    </div>
         </div>
   );
 }

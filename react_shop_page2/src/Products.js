@@ -19,11 +19,11 @@ function Products() {
         "price": "2.5"
     })
 
-    let cookiesListConverted = cookiesList.map(cookie => <div key = {cookie.id} className = "cookie">
-        <img src={cookie.image}></img>
-        <h3>{cookie.name}</h3>
-        <p>{cookie.price} K.D.</p>
-    </div>);
+    // let cookiesListConverted = cookiesList.map(cookie => <div key = {cookie.id} className = "cookie">
+    //     <img src={cookie.image}></img>
+    //     <h3>{cookie.name}</h3>
+    //     <p>{cookie.price} K.D.</p>
+    // </div>);
 
     return ( 
         <div className = "cookiesList">

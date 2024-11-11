@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  height: 90vh;
 }
 
 .App-logo {
@@ -14,8 +15,8 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #171717;
+  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,6 +38,13 @@
   }
 }
 
+.App-header  p {
+  background-color: dodgerblue;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid #fff;
+  border-radius: 8px;
+}
 
 .cookies {
   width: 150px;
@@ -55,10 +63,28 @@
   margin-right: 30px;
   border: 1px solid #fff;
   border-radius: 12px;
+
 }
+
 
 .cookie > img {
   height: 200px;
   width: 200px;
   border-radius: 12px;
+}
+
+.cookie:hover > img {
+  transform: scale(1.1);
+  /* transition: 0.2; */
+}
+
+.cookie >p {
+  color: dodgerblue;
+  background-color: #fff;
+}
+
+.cookie:hover p {
+  color: #fff;
+  background-color: dodgerblue;
+  font-weight: bold;
 }
